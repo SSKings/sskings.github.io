@@ -38,8 +38,8 @@ body {
   animation-name: slidein;
   margin: 20px;
   border: 1px white solid;
-  width: 400px;
-  height: 500px;
+  max-width: 400px;
+  max-height: 500px;
 }
 
 .campo-foto-1 > img {
