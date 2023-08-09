@@ -17,9 +17,18 @@ body {
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-content: center;
   align-items: center;
+}
+
+@media (min-width: 769px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+  }
 }
 
 .campo-foto-1 {
