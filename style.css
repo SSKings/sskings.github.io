@@ -12,7 +12,8 @@ body {
 }
 
 .titulo {
-  animation: 1.5s normal initial Slidein;
+  animation-duration: 3s;
+  animation-name: slidein;
   text-align: center;
 }
 
@@ -33,16 +34,22 @@ body {
 }
 
 .campo-foto-1 {
-  animation: 1.5s normal initial Slidein;
+  animation-duration: 3s;
+  animation-name: slidein;
   margin: 20px;
   border: 1px white solid;
   width: 400px;
   height: 500px;
 }
 
-.campo-foto-1>img {
+.campo-foto-1 > img {
   width: 400px;
   height: 500px;
+}
+
+.container-texto {
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 
 @keyframes slidein {
