@@ -18,6 +18,11 @@ body {
   font-size: 20px;
 }
 
+.texto-animado{
+  width: 500px;
+  height: 360px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -25,7 +30,12 @@ body {
   align-items: center;
 }
 
+
 @media (min-width: 769px) {
+  .texto-animado {
+    width: 800px;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -49,7 +59,10 @@ body {
 }
 
 .container-texto {
-  margin: 0, 15px;
+  padding: 100px;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
   animation-duration: 3s;
   animation-name: slidein;
   font-size: 16px;
