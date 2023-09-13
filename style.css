@@ -19,7 +19,7 @@ body {
 }
 
 .texto-animado{
-  width: 500px;
+  width: 800px;
   height: 360px;
 }
 
@@ -30,10 +30,45 @@ body {
   align-items: center;
 }
 
+section {
+  display:flex;
+  width:600px;
+  height:450px;			
+}
 
-@media (min-width: 769px) {
+section img{
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+section img:hover{
+  cursor:crosshair;
+  width: 500px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+@media (max-width: 769px) {
+
   .texto-animado {
-    width: 800px;
+    width: 500px;
+  }
+
+  section {
+    display:flex;
+    width:400px;
+    height:450px;			
+  }
+
+  section img:hover{
+    cursor:crosshair;
+    width: 300px;
+    height: 450px;
+    opacity: 1;
+    filter: contrast(120%);
   }
 
   .container {
@@ -49,14 +84,9 @@ body {
   animation-name: slidein;
   margin: 20px;
   border: 1px white solid;
-  max-width: 400px;
-  max-height: 500px;
+
 }
 
-.campo-foto-1 > img {
-  width: 400px;
-  height: 500px;
-}
 
 .container-texto {
   padding: 100px;
